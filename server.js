@@ -18,7 +18,7 @@ wss.on('connection', function(ws, req){
   ws.on('close', function close() {
     wss.clients.forEach(function (client) {
       if(clientReady(client)){
-        client.send('a user went offile ') // TODO say which user went offile
+        //client.send('a user went offile ') // TODO say which user went offile
       }
     })
   })
